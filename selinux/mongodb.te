@@ -45,6 +45,7 @@ allow mongod_t self:udp_socket { read write create connect bind getattr getopt s
 miscfiles_read_generic_certs(mongod_t)
 
 manage_dirs_pattern(mongod_t, mongod_log_t, mongod_log_t)
+search_dirs_pattern(mongod_t, mongod_log_t, mongod_log_t)
 append_files_pattern(mongod_t, mongod_log_t, mongod_log_t)
 create_files_pattern(mongod_t, mongod_log_t, mongod_log_t)
 rename_files_pattern(mongod_t, mongod_log_t, mongod_log_t)
